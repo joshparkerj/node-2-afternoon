@@ -3,7 +3,8 @@ const dotenv = require('dotenv').config();
 const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
+const PORT = 3000;
 
-app.listen(8080, () => {
-  console.log('listening 8080');
+app.listen(PORT, () => {
+  console.log(`listening\nport:${PORT}`);
 })
